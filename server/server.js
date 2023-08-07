@@ -4,12 +4,14 @@ const express = require("express");
 const mongoose = require("mongoose");
 const workoutRoutes = require("./routes/workouts");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 
 // express app
 const app = express();
 
 app.use(bodyParser.json()); // Parse JSON bodies
 app.use(bodyParser.urlencoded({ extended: true })); // Parse URL-encoded bodies
+app.use(cors());
 
 //middleware
 app.use((req, res, next) => {
