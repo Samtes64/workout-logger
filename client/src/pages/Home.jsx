@@ -24,13 +24,13 @@ const Home = ()=>{
     },[])
 
     return(
-        <div className="flex">
-            <div>
+        <div className="flex gap-5">
+            <div className="w-1/2">
               {workouts && workouts.map((workout)=>(
                 <WorkoutDetails key={workout._id} workout={workout}/>
               ))}  
             </div>
-            <WorkoutForm/>
+            <WorkoutForm />
         </div>
     )
 }

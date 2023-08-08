@@ -31,7 +31,7 @@ const WorkoutForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="grid gap-4">
+    <form onSubmit={handleSubmit} className="grid gap-4 w-1/3 h-fit">
       <h3 className="text-xl font-semibold">Add a New Workout</h3>
 
       <div className="flex flex-col">
@@ -72,7 +72,7 @@ const WorkoutForm = () => {
 
       <button
         type="submit"
-        className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500"
       >
         Add
       </button>
